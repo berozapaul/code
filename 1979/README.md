@@ -1,36 +1,34 @@
-# 1979. Find Greatest Common Divisor of Array
+# 1295. Find Numbers with Even Number of Digits
 
 
-Given an integer array nums, return the greatest common divisor of the smallest number and largest number in nums.
-
-The greatest common divisor of two numbers is the largest positive integer that evenly divides both numbers.
-
+Given an array nums of integers, return how many of them contain an even number of digits.
 
 
  
 
 ### Example 1:
 ```
-Input: nums = [2,5,6,9,10]
+Input: nums = [12,345,2,6,7896]
 Output: 2
-Explanation:
-The smallest number in nums is 2.
-The largest number in nums is 10.
-The greatest common divisor of 2 and 10 is 2.
+Explanation: 
+12 contains 2 digits (even number of digits). 
+345 contains 3 digits (odd number of digits). 
+2 contains 1 digit (odd number of digits). 
+6 contains 1 digit (odd number of digits). 
+7896 contains 4 digits (even number of digits). 
+Therefore only 12 and 7896 contain an even number of digits.
 ```
 
 ### Example 2:
 ```
-Input: nums = [7,5,6,8,3]
-Output: 1
-Explanation:
-The smallest number in nums is 3.
-The largest number in nums is 8.
-The greatest common divisor of 3 and 8 is 1.
+Input: nums = [555,901,482,1771]
+Output: 1 
+Explanation: 
+Only 1771 contains an even number of digits.
  ```
 
 Constraints:
 ```
-2 <= nums.length <= 1000
-1 <= nums[i] <= 1000
+1 <= nums.length <= 500
+1 <= nums[i] <= 105
 ```
