@@ -46,3 +46,20 @@
     // 0 1 1 2 3 5 8 13 21
     console.log(getFibo(6)) // 8
 })();
+
+
+(function(){
+    // Write a program to count the digits of a given number using recursion.
+
+    const getDigitCnt = (n) => {
+       if (n === 0) {
+          return 0;
+       } 
+
+       return 1 + getDigitCnt(Math.floor(n / 10));
+    };
+ 
+    // 253
+    console.log(getDigitCnt(253)) // 3
+})();
+
