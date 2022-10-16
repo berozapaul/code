@@ -59,7 +59,21 @@
        return 1 + getDigitCnt(Math.floor(n / 10));
     };
  
-    // 253
     console.log(getDigitCnt(253)) // 3
+})();
+
+
+(function(){
+    // Write a program to find the sum of digits of a number using recursion
+
+    const getDigitSum = (n) => {
+        if (n === 0) {
+            return 0;
+        } 
+
+        return n % 10 + getDigitSum(Math.floor(n / 10));
+    };
+ 
+    console.log(getDigitSum(254)) // 11
 })();
 
