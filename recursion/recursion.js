@@ -94,3 +94,18 @@
 })();
 
 
+(function(){
+    // Write a program to get the largest element of an array using recursion
+
+    const getLargest = (arr) => {
+        if (arr.length < 1) {
+            return 0;
+        } 
+
+        return Math.max(arr.pop(), getLargest(arr));
+    };
+ 
+    const a = [1, 5, 6, 3, 9, 7];
+    console.log(getLargest(a)) // 9
+})();
+
