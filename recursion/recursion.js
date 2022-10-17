@@ -77,3 +77,20 @@
     console.log(getDigitSum(254)) // 11
 })();
 
+
+(function(){
+    // Write a program to find GCD of two numbers using recursion
+
+    const getGCD = (m, n) => {
+        const remainder = m % n;
+        if (remainder === 0) {
+            return n;
+        } 
+
+        return getGCD(n, remainder);
+    };
+ 
+    console.log(getGCD(5, 25)) // 5
+})();
+
+
