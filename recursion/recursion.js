@@ -109,3 +109,18 @@
     console.log(getLargest(a)) // 9
 })();
 
+
+(function(){
+    // Write a program to reverse a string using recursion
+
+    const strReverse = (s) => {
+        if (s.length < 1) {
+            return '';
+        } 
+
+        return s.slice(-1) + strReverse(s.slice(0, -1));
+    };
+ 
+    const str = 'love';
+    console.log(strReverse(str)) // evol
+})();
