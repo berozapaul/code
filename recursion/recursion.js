@@ -140,3 +140,17 @@
     console.log(getFact(5)) // 120
 })();
 
+
+(function(){
+    // Write a program to convert a decimal number to binary using recursion
+
+    const getBinary = (n) => {
+        if (n < 1) {
+            return 0;
+        } 
+
+        return (n%2) + 10 * getBinary(Math.floor(n / 2));
+    };
+ 
+    console.log(getBinary(5)) // 011
+})();
