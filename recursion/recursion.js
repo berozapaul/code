@@ -154,3 +154,23 @@
  
     console.log(getBinary(5)) // 011
 })();
+
+
+(function(){
+    // Write a program to check a number is a prime using recursion
+
+    const getPrime = (n, i) => {
+        if (~n & 1) {
+           return false;
+        }
+
+        if ( i < 2) {
+            return true;
+        }
+
+        return n % i === 0 ? false : getPrime(n, i - 1);
+
+    };
+ 
+    console.log(getPrime(21, 20)) // false
+})();
