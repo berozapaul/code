@@ -174,3 +174,19 @@
  
     console.log(getPrime(21, 20)) // false
 })();
+
+
+(function(){
+    // Write a program to calculate the power of any number using recursion
+
+    const getPower = (n, m) => {
+        if (m < 1) {
+           return 1;
+        }
+
+        return n *  getPower(n, m - 1);
+
+    };
+ 
+    console.log(getPower(2, 3)) // 8
+})();
