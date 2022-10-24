@@ -190,3 +190,20 @@
  
     console.log(getPower(2, 3)) // 8
 })();
+
+
+(function(){
+    // Write a program to find the Hailstone Sequence of a given number upto 1
+
+    const getHailstone = (n) => {
+        if (n < 2) {
+           return [];
+        }
+
+        n = (n & 1) ? n * 3 + 1 : n / 2;
+        return [n].concat(getHailstone(n));
+
+    };
+ 
+    console.log(getHailstone(13)) // [40, 20, 10, 5, 16, 8, 4, 2, 1]
+})();
