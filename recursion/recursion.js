@@ -207,3 +207,18 @@
  
     console.log(getHailstone(13)) // [40, 20, 10, 5, 16, 8, 4, 2, 1]
 })();
+
+
+(function(){
+    // Write a program to find the first capital letter in a string using recursion
+
+    const getCapital = (s) => {
+        if (s.length < 1) {
+           return '';
+        }
+
+        return s[0] === s[0].toUpperCase() ? s[0] : getCapital(s.slice(1));
+    };
+ 
+    console.log(getCapital('tEstDtRing')) // E
+})();
