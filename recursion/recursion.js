@@ -222,3 +222,13 @@
  
     console.log(getCapital('tEstDtRing')) // E
 })();
+
+(function(){
+    // Write a program to reverse an integer number using recursion
+
+    const numReverse = (n, m) => {
+        return n == 0 ? m : numReverse(Math.floor(n / 10), m * 10 +  n % 10);
+    };
+    
+    console.log(numReverse(num, 0)) // 537
+})();
