@@ -227,8 +227,22 @@
     // Write a program to reverse an integer number using recursion
 
     const numReverse = (n, m) => {
-        return n == 0 ? m : numReverse(Math.floor(n / 10), m * 10 +  n % 10);
+        return n === 0 ? m : numReverse(Math.floor(n / 10), m * 10 +  n % 10);
     };
-    
+    const num = 735;
     console.log(numReverse(num, 0)) // 537
+})();
+
+
+(function(){
+    // Write a program to convert a binary number to decimal number using recursion
+
+    const getDecimal = (n) => {
+        if (!n) {
+            return 0;
+        } 
+        return  n[0] * (2 ** (n.length - 1)) + getDecimal(n.slice(1))
+    };
+ 
+    console.log(getDecimal('111')) // 7
 })();
