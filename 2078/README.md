@@ -7,7 +7,6 @@ Return the maximum distance between two houses with different colors.
 
 The distance between the ith and jth houses is abs(i - j), where abs(x) is the absolute value of x.
 
-
  
 
 ### Example 1:
