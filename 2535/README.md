@@ -11,7 +11,6 @@ Note that the absolute difference between two integers x and y is defined as |x 
 
 
  
-
 ### Example 1:
 ```
 Input: nums = [1,15,6,3]
